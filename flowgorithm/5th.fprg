@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 04:21:46 PM"/>
+        <attribute name="created" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDQ6MTk6MTggUE07IDI2MDE="/>
+        <attribute name="edited" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDQ6MjE6NDYgUE07IDI1OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <output expression="&quot; enter a year :&quot;"/>
+            <input variable="year"/>
+            <if expression="y%4==0">
+                <then>
+                    <output expression="&quot; year is a leap year&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot; year is not a leap year&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 08:49:50 PM"/>
+        <attribute name="created" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDg6NDM6MDIgUE07IDI1OTU="/>
+        <attribute name="edited" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDg6NDk6NTAgUE07IDI2MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, radius, circumference, choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter radius&quot;"/>
+            <input variable="radius"/>
+            <output expression="&quot;enter 1 for area and 2 for circumference&quot;"/>
+            <input variable="choice"/>
+            <if expression="choice==1">
+                <then>
+                    <assign variable="area" expression="radius*radius*3.1415"/>
+                    <output expression="area"/>
+                </then>
+                <else>
+                    <if expression="choice==2">
+                        <then>
+                            <assign variable="circumference" expression="2*3.1415*radius"/>
+                            <output expression="circumference"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Invalid choice&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

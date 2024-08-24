@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 09:04:32 PM"/>
+        <attribute name="created" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDg6NTc6NDEgUE07IDI2MDM="/>
+        <attribute name="edited" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDk6MDQ6MzIgUE07IDI1OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <output expression="&quot;enter a number&quot;"/>
+            <input variable="n"/>
+            <while expression="">
+                <output expression="n"/>
+                <output expression="&quot;*&quot;"/>
+                <output expression="c"/>
+                <output expression="n*c"/>
+                <assign variable="c" expression="c+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

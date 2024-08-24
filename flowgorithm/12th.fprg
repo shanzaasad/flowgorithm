@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 09:21:20 PM"/>
+        <attribute name="created" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDk6MTU6MzQgUE07IDI2MDA="/>
+        <attribute name="edited" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDk6MjE6MjAgUE07IDI1OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="product, c" type="Integer" array="False" size=""/>
+            <assign variable="product" expression="1"/>
+            <for variable="c" start="1" end="10" direction="inc" step="2">
+                <assign variable="product" expression="product*c"/>
+                <output expression="&quot;result&quot;"/>
+                <output expression="product"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

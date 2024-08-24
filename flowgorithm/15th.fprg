@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 09:36:25 PM"/>
+        <attribute name="created" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDk6Mjg6MTkgUE07IDI2MDc="/>
+        <attribute name="edited" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDk6MzY6MjUgUE07IDI2MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age" type="Integer" array="True" size="150"/>
+            <declare name="i, n, count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <output expression="&quot;enter a number of persons required&quot;"/>
+            <input variable="n"/>
+            <output expression="&quot;enter ages of&quot;"/>
+            <output expression="n"/>
+            <output expression="&quot;persons&quot;"/>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <input variable="age[i]"/>
+                <if expression="age[i]&gt;=50&amp;&amp;age[i]&lt;=60">
+                    <then>
+                        <output expression="count=count+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="count"/>
+                <output expression="&quot;persons are between 50 and 60&quot;"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

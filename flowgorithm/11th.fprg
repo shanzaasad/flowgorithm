@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-23 09:15:29 PM"/>
+        <attribute name="created" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDk6MDk6NDYgUE07IDI2MDY="/>
+        <attribute name="edited" value="SFA7IERFU0tUT1AtSEhTQ0NJMDsgMjAyNC0wOC0yMzsgMDk6MTU6MjkgUE07IDI2MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, n, r, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number&quot;"/>
+            <input variable="num"/>
+            <assign variable="n" expression="num"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="n!=0">
+                <assign variable="r" expression="n%10"/>
+                <assign variable="sum" expression="sum+(r*r*r)"/>
+                <assign variable="n" expression="n/10"/>
+                <if expression="sum==num">
+                    <then>
+                        <output expression="num"/>
+                        <output expression="&quot;is an armstrong number&quot;"/>
+                    </then>
+                    <else>
+                        <output expression="num"/>
+                        <output expression="&quot; is not an armstrong number&quot;"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
